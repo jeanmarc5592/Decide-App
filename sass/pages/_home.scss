@@ -1,0 +1,36 @@
+.main-wrapper {
+    background-color: $color-grey-light;
+    width: 100vw;
+ 
+    padding: 8rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// The different cards
+#start {
+    display: block;
+}
+
+#step1 {
+    display: none;
+}
+
+#step2 {
+    display: none;
+}
+
+#step3 {
+    display: none;
+}
+
+#step4 {
+    display: none;
+}
+
+#step5 {
+    display: none;
+}

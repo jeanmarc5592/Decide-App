@@ -1,0 +1,102 @@
+.button {
+    box-shadow: 1rem 1rem 2rem rgba($color-black, .4);
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all .3s;
+    border: none;
+
+    &:hover {
+        transform: translateY(-.4rem);
+        box-shadow: 2rem 2rem 4rem rgba($color-black, .5);
+    }
+
+    &:active {
+        transform: translateY(-.1rem);
+        box-shadow: 1rem 1rem 2rem rgba($color-black, .5);
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate((-50%, -50%));
+        
+        font-size: 2.3rem;
+        color: $color-purple-dark;
+    }
+    
+    
+    &--next {
+        background-color: $color-green;
+        color: $color-purple-dark;
+        transition: all .3s;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        width: 45%;
+
+        &-start {
+            margin: 0 auto;
+        }
+    }
+    
+    &--add {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: $color-blue;
+        transition: all .3s;
+        display: inline-block;
+
+        position: relative;
+        align-self: center;
+
+        &:hover {
+            background-color: $color-green;
+        }
+    }
+
+    &--del {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: $color-red;
+        transition: all .3s;
+        
+
+
+        position: relative;
+        align-self: center;
+
+        &:hover {
+            background-color: $color-green;
+        }
+    }
+
+
+
+    &--back {
+        width: 45%;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        color: $color-white;
+        background-color: transparent;
+        border: 2px solid $color-purple-light;
+        box-shadow: none;
+    }
+    
+    &--new {
+        width: 45%;
+        font-size: 1.8rem;
+        border-radius: 1rem;
+        border: 2px solid $color-green;
+        background-color: transparent;
+        color: $color-green;
+        margin: 0 auto;
+    }
+}
+
+#cancelbtn {
+    width: 3rem;
+    height: 3rem;
+}

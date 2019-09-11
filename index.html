@@ -1,0 +1,301 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>De.cide - Decisions made easy</title>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <main class="main-wrapper">
+            
+            <!-- START  -->
+            <div id="start" class="card card--start">
+                <div class="card__logo u-margin-bottom-3rem u-center-text">
+                    <img src="/img/Logo 14.34.35.png" alt="" class="card__img">
+                </div>
+                <div class="card__heading">
+                    <h2 class="heading heading__secondary u-margin-bottom-3rem">
+                        Find the answer for your decision in 5 easy steps!
+                    </h2>
+                    <h2 class="heading heading__secondary u-margin-bottom-3rem">
+                        Are you ready?
+                    </h2>
+                </div>
+                <div class="card__button-wrapper">
+                    <button id="startbtn" class="button button--next button--next-start">
+                        Let's start!
+                    </button>
+                </div>
+            </div>
+            
+
+            <!-- STEP 1 -->
+            <div id="step1" class="card card--progress">
+                <div class="card__header">
+                    <div class="card__logo u-margin-bottom-3rem">
+                        <img src="/img/Logo 14.34.35.png" alt="" class="card__img">
+                    </div>
+                    <button id="cancelbtn1" class="button button--del">
+                        <span class="button__icon">&cross;</span>
+                    </button>
+                    <div class="card__progress">
+                        <div class="card__progress--1">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="card__divider">
+                    &nbsp;
+                </div>
+                <div class="card__body">
+                    <div class="card__task">
+                        <div class="card__heading">
+                            <h3 id="test" class="heading__tertiary u-margin-bottom-2rem">
+                                What would you like to decide?
+                            </h3>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__paragraph u-margin-bottom-3rem">
+                                Helps you to recognize the decision later and gives it an identity!
+                            </p>
+                        </div>
+                        <form class="card__form">
+                            <input id="inputName" type="text" class="card__input card__input--text" required>
+                        </form>
+                    </div>
+                    <div class="card__task">
+                        <div class="card__heading">
+                            <h3 class="heading__tertiary u-margin-bottom-2rem">
+                                What are your choices?
+                            </h3>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__paragraph u-margin-bottom-3rem">
+                                Insert the two options you have!
+                            </p>
+                        </div>
+                        <form class="card__form">
+                            <input id="inputChoiceOne" type="text" class="card__input card__input--text" required>
+                            <input id="inputChoiceTwo" type="text" class="card__input card__input--text" required>
+                        </form>
+                    </div>
+                    <div class="card__button-wrapper">
+                        <button id="backbtn1" class="button button--back">Back</button>
+                        <button id="nextbtn1" class="button button--next">Next</button>
+                    </div>
+                </div>
+            </div>
+           
+
+            <!-- STEP 2-->
+            <div id="step2" class="card card--progress">
+                <div class="card__header">
+                    <div class="card__logo u-margin-bottom-3rem">
+                        <img src="/img/Logo 14.34.35.png" alt="" class="card__img">
+                    </div>
+                    <button id="cancelbtn2" class="button button--del">
+                        <span class="button__icon">&cross;</span>
+                    </button>
+                    <div class="card__progress">
+                        <div class="card__progress--2">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="card__divider">
+                    &nbsp;
+                </div>
+                <div class="card__body">
+                    <div class="card__task">
+                        <div class="card__heading">
+                            <h3 class="heading__tertiary u-margin-bottom-2rem">
+                                Fill in the most important factors
+                            </h3>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__paragraph u-margin-bottom-3rem">
+                                What aspects are most important to your decision? Add them below!
+                            </p>
+                        </div>
+                        <form id="factors-input" class="card__form u-margin-bottom-3rem">
+                            <!-- <input id="inputFactor" type="text" class="card__input card__input--text"> -->
+                        </form>
+                        <div class="card__button-wrapper u-flex-sp-around">
+                            <button id="addbtn" class="button button--add">
+                                <span class="button__icon">&plus;</span>
+                            </button>
+                            <button id="delbtn" class="button button--del">
+                                <span class="button__icon">&cross;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card__button-wrapper">
+                        <button id="backbtn2" class="button button--back">Back</button>
+                        <button id="nextbtn2" class="button button--next">Next</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- STEP 3-->
+            <div id="step3" class="card card--progress">
+                <div class="card__header">
+                    <div class="card__logo u-margin-bottom-3rem">
+                        <img src="/img/Logo 14.34.35.png" alt="" class="card__img">
+                    </div>
+                    <button id="cancelbtn3" class="button button--del">
+                        <span class="button__icon">&cross;</span>
+                    </button>
+                    <div class="card__progress">
+                        <div class="card__progress--3">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="card__divider">
+                    &nbsp;
+                </div>
+                <div class="card__body">
+                    <div class="card__task">
+                        <div class="card__heading">
+                            <h3 class="heading__tertiary u-margin-bottom-2rem">
+                                How important is each factor?
+                            </h3>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__paragraph u-margin-bottom-3rem">
+                                Weigh the importance to each decision factor from 1 through 10, with 10 being most important!
+                            </p>
+                        </div>
+                        <form id="factors-rate">
+                            <!-- <div id="rateFactor" class="card__factor u-flex-sp-between">
+                                <span class="card__paragraph">%factor</span>
+                                <input id="inputRate" type="text" class="card__input card__input--number">
+                            </div>
+                            -->
+                        </form>
+                    </div>
+                    <div class="card__button-wrapper">
+                        <button id="backbtn3" class="button button--back">Back</button>
+                        <button id="nextbtn3" class="button button--next">Next</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- STEP 4-->
+            <div id="step4" class="card card--progress">
+                <div class="card__header">
+                    <div class="card__logo u-margin-bottom-3rem">
+                        <img src="/img/Logo 14.34.35.png" alt="" class="card__img">
+                    </div>
+                    <button id="cancelbtn4" class="button button--del">
+                        <span class="button__icon">&cross;</span>
+                    </button>
+                    <div class="card__progress">
+                        <div class="card__progress--4">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="card__divider">
+                    &nbsp;
+                </div>
+                <div class="card__body">
+                    <div class="card__task">
+                        <div class="card__heading">
+                            <h3 class="heading__tertiary u-margin-bottom-2rem">
+                                Grade each factor for each choice:
+                            </h3>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__paragraph u-margin-bottom-3rem">
+                                How would you grade each factor for each choice? Add grades from 1 through 10!
+                            </p>
+                        </div>
+                        <div class="card__grade u-margin-bottom-5rem">
+                            <div class="card__choice">
+                                <div id="choiceOneLabel" class="card__choice-text">
+                                    %choice1
+                                </div>
+                            </div>
+                            <form id="factors-grade1">
+                                <!-- <div id="gradeFactor1" class="card__factor u-flex-sp-between">
+                                <span class="card__paragraph">%factor</span>
+                                <input id="inputRate" type="text" class="card__input card__input--number">
+                            </div>
+                            -->
+                            </form>
+                        </div>
+                        <div class="card__grade">
+                            <div class="card__choice">
+                                <div id="choiceTwoLabel" class="card__choice-text">
+                                    %choice2
+                                </div>
+                            </div>
+                            <form id="factors-grade2">
+                                <!-- <div id="gradeFactor2" class="card__factor u-flex-sp-between">
+                                <span class="card__paragraph">%factor</span>
+                                <input id="inputRate" type="text" class="card__input card__input--number">
+                            </div>
+                            -->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card__button-wrapper">
+                        <button id="backbtn4" class="button button--back">Back</button>
+                        <button id="nextbtn4" class="button button--next">Next</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- STEP 5-->
+            <div id="step5" class="card card--progress">
+                <div class="card__header">
+                    <div class="card__logo u-margin-bottom-3rem">
+                        <img src="/img/Logo 14.34.35.png" alt="" class="card__img">
+                    </div>
+                    <div class="card__progress">
+                        <div class="card__progress--5">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="card__divider">
+                    &nbsp;
+                </div>
+                <div class="card__body">
+                    <div class="card__task">
+                        <div class="card__heading">
+                            <h1 class="heading__primary u-margin-bottom-5rem">
+                                Result
+                            </h1>
+                        </div>
+                        <div class="card__description">
+                            <p class="card__paragraph u-margin-bottom-5rem u-center-text">
+                               The best choice for you is:
+                            </p>
+                            <p id="resultLabel" class="card__result u-margin-bottom-8rem">%choice2</p>
+                        </div>
+                        
+                    <div class="card__button-wrapper">
+                        <button id="newbtn" class="button button--new">New Decision</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+    <script src="Javascript/script.js"></script>
+    </body>
+
+
+
+</html>

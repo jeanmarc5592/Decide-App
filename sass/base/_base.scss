@@ -1,0 +1,31 @@
+html {
+    font-size: 62.5%; // 1rem --> 10px
+    font-weight: 400;
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: 52.5em) {
+        font-size: 56.25%; // 1rem --> 9px
+    } // 840px / 16px(default)
+
+    @media only screen and (max-width: 47.25em) {
+        font-size: 50%; // 1rem --> 8px
+    } // 756px / 16px(default)
+
+    @media only screen and (max-width: 42.5em) {
+        font-size: 43.75%; // 1rem --> 7px
+    } // 680px / 16px(default)
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
