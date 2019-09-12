@@ -1,7 +1,7 @@
 $(function() {
     // DOM OBJECT
      var DOM = {
-        start : $('#start'),
+        stepZero : $('#step0'),
         stepOne : $('#step1'),
         stepTwo : $('#step2'),
         stepThree : $('#step3'),
@@ -47,7 +47,13 @@ $(function() {
                     $(next).fadeIn('slow');
             });
         },
-
+        // FADE TO PREVIOUS CARD
+        fadePrevious: function(current, previous) {
+            $('#step' + current).fadeOut('slow', function() {
+                $('#step' + previous).fadeIn('slow');
+            });
+        },
+        // SET A DIFFERENT BACKGROUND TO ALL ODD CHILDREN
         setDifferentBackground: function(parent) {
             $(parent).children('#rateFactor').filter(':odd').css('background-color', 'rgba(97, 90, 211, 0.3)');
         },
@@ -97,7 +103,7 @@ $(function() {
                 this.pushAllChildrenNumbers(children, target);
             }
         },
-
+        // MULTIPLY THE RATE WITH EACH GRADE
         multiplier : function(rates, grades, result) {
             rates.forEach(function(element) {
                 var index = rates.indexOf(element);
@@ -105,7 +111,7 @@ $(function() {
                 result.push(product);
             });
         },
-
+        // SUMMERIZE ALL PRODUCTS 
         summerize: function(arr) {
             var result = 0
             arr.forEach(function(item) {
@@ -121,9 +127,10 @@ $(function() {
     // ------ CLICK EVENTS -------
     // ---------------------------
     
+
     // START --> STEP 1
     DOM.startButton.click(function() {
-        functions.fadeNext(DOM.start, DOM.stepOne);
+        functions.fadeNext(DOM.stepZero, DOM.stepOne);
     });
 
 
